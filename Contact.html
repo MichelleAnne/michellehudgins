@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/webflow.css">
   <link rel="stylesheet" type="text/css" href="css/michellehudgins.webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/contact.css">
   <link rel="shortcut icon" href="images/MyLogo.ico"></link>
 </head>
 <body>
@@ -25,7 +26,7 @@
   </div>
   <nav class="middle">
     <div class="w-container">
-      <div class="w-row">
+      <div class="display">
         <div class="w-col w-col-3 nav">
           <div class="w-container nav">
             <div class="w-container">
@@ -46,43 +47,46 @@
             <img class="portfolio" src="images/portfolio.png" width="150" height="150" alt="portfolio.png">
           </a>
         </div>
-        <div class="w-col w-col-3 w-clearfix">
-          <img class="me" src="images/541873_10153293961530065_1592035820_n.jpeg" height="191" alt="541873_10153293961530065_1592035820_n.jpeg">
-        </div>
-        <div class="w-col w-col-3 heads">
-          <h4>First Name:</h4>
-          <h4>Middle Name:</h4>
-          <h4>Last Name:</h4>
-          <h4>Current City:</h4>
-          <h4>Occupation:</h4>
-        </div>
-        <div class="w-col w-col-2 facts">
-          <p>Michelle</p>
-          <p>Anne</p>
-          <p>Hudgins</p>
-          <p>Rota, Spain</p>
-          <p>Designer</p>
-        </div>
-        <div class="w-col w-col-1"></div>
-      </div>
-      <div class="w-container">
-        <div class="w-row">
-          <div class="w-col w-col-3"></div>
-          <div class="w-col w-col-9">
-            <p class="body">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; I am a recent graduate from Eastern Washington University, with a major in Visual Communication Design and a minor in Psychology. If you have any questions, comments or need additional information that cannot be found on this website; please feel free to contact me and I will respond as soon as possible. Thank you! &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</p>
-          </div>
-        </div>
-      </div>
     </div>
-  </nav>
   
+
+        
+<div class="w-col w-col-3 w-clearfix">
+
+<form method="post" id="customForm" action="contact.php">
+<div id="YourInfo">
+    <div>
+    <label for="name"><span id="nameInfo">Your Name</span></label>
+    <input id="name" name="name" type="text">
+    </div>
+    <div>
+    <label for="e_mail"><span id="e_mailInfo">Your E-mail</span></label>
+    <input id="e_mail" name="e_mail" type="text">
+    </div>
+</div>
+<div id="Message">
+    <div>
+    <label for="message">Your Message To Me</label>
+    <textarea id="message" name="message" cols="" rows="" class="error" placeholder="Send me a message and I will respond within twenty four hours!"></textarea>
+    </div>
+    <div id="Send">
+    <input id="send" name="submit" type="submit" value="Send">
+    </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+	</nav>
+    
 <footer id="footer">
 <p>e-mail me at <a href="mailto:michellehudgins@gmail.com">michellehudgins@gmail.com</a></p>
 </footer>
 
-  
-  
+
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
+  <script type="text/javascript" src="js/contact.js"></script>
+
 </body>
 </html>

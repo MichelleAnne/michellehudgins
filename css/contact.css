@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container {
+margin: 0 auto;
+width: 700px;
+padding: 20px 0 20px 0;
+line-height: 1.7em;
+}
+body {
+font-size: 12px;
+color: #a3a8b6;
+/* overflow: hidden; */
+background-color: #363942;
+}
+#customForm label{ 
+display: block; 
+line-height: 1.7em; 
+font-size: 12px;
+}
+#customForm input{ 
+width: 450px; 
+padding:4px; 
+font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; 
+font-size: 12px; 
+border:1px #a3a8b6 dashed; 
+background:none; 
+border-radius:5px; 
+color:#e3e6ef;
+}
+#customForm textarea{ 
+width:450px; 
+height:175px; 
+padding: 4px; 
+font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; 
+font-size: 12px; 
+border:1px #a3a8b6 dashed; 
+background:none; 
+border-radius:5px;
+color:#E3E6EF;
+}
+::-webkit-input-placeholder {
+   color: #e3e6ef;
+   font-family:'Helvetica Neue', Helvetica, Arial, sans-serif; 
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #e3e6ef; 
+   font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #e3e6ef; 
+   font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;  
+}
+:-ms-input-placeholder {  
+   color: #e3e6ef;
+   font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;  
+}
+#customForm div{ 
+margin-bottom: 15px; 
+}
+#customForm div span{ 
+margin-left: 2px; 
+font-size: 12px; 
+}
+#customForm #send{ 
+font-weight:bold; 
+font-size:14px; 
+color:#a3a8b6; 
+border:1px solid #a3a8b6; 
+cursor: pointer; 
+width:90px;  
+}
+#customForm #send:hover{ 
+background:#E3E6EF; 
+border:1px solid #e3e6ef; 
+transition: 2s; 
+color:#424347;
+}
+input[type=text]:focus, textarea:focus{
+outline:none;
+box-shadow: 0 0 4px #e3e6ef;	
+}
+
