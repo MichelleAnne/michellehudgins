@@ -75,3 +75,39 @@ $(document).ready(function(){
 		}
 	}
 });
+
+$(function() {
+  
+// Dropdown toggle
+$('.mobilemenu').click(function(){
+  $(this).next('.sub-menu').toggle();
+});
+
+$(document).click(function(e) {
+  var target = e.target;
+  if (!$(target).is('.mobilemenu') && !$(target).parents().is('.mobilemenu')) {
+    $('.sub-menu').hide();
+  }
+});
+
+
+
+$(".mobilemenu").click(function(){
+    	if(this.checked == true) { //3rd radiobutton
+    		$("#customForm").attr("disabled", "disabled"); 
+    	}
+    	else {
+    		$("#customForm").removeAttr("disabled"); 
+    	}
+
+  });
+
+
+
+
+
+});
+
+
+
+
