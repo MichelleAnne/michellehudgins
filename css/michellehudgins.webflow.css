@@ -164,7 +164,9 @@ p {
   color:#e3e6ef;
   text-decoration:none;
 }
-
+.nav-button, .primary-nav{
+display:none;
+}
   
   
 @media (max-width: 991px) {
@@ -176,13 +178,104 @@ p {
   p {
     float: none;
   }
+  .logo{
+	  margin-left:10px;
+  }
   .about {
     float: none;
   }
+  #desknav{
+	  display:none;
+  }
+  	/* Navigation Button
+	-------------------------------------------------------- */
+
+	.nav-button {
+		display: block;
+		position: relative;
+		float:right;
+		top: -60px;
+		left: 7px;
+		width: 50px;
+		height: 35px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+		background-color: #424347;
+		cursor: pointer;
+		border-radius: 2px;
+		border: none;
+		z-index: 999;
+		margin-right: 30px;
+	}
+	.nav-button:hover { 
+		background-color: #e3e6ef; 
+	}
+	.nav-button.open {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+		border: none;
+	}
+	.nav-button:focus{
+		outline:none;
+	}
+	.nav-button.open:focus{
+		border:1px solid #a3a8b6;
+	}
+
+	/* Navigation Bar
+	-------------------------------------------------------- */
+
+
+	.primary-nav {
+		width: 100%;
+		background-color: #424347; /* change the menu color */
+		display: block;
+		margin: 0;
+		z-index: 998;
+	}
+	.primary-nav li {
+		display: none;
+		width: 100%;
+	}
+	.primary-nav li a {
+		display: block;
+		width: 100%;
+		padding: 10px 5%;
+		font-size: 16px;
+		font-weight: bold;
+		color: #a3a8b6;
+		text-decoration: none;
+	}
+	.primary-nav li a:hover {
+		color: #e3e6ef;
+	}
+	.mobilestamp{
+		padding-right: 10px;
+	}
+
+	/* Toggle the navigation bar open  */
+
+	.primary-nav.open { 
+		height: auto; 
+	}
+	.primary-nav.open li { 
+		display: block; 
+		padding-top:10px;
+	}
+
+/* End Mobile Styles */
 }
 @media (max-width: 479px) {
   .body {
     padding-right: 10px;
     padding-left: 10px;
+  }
+  .logo{
+	  margin-left:5px;
+  }
+  .nav-button{
+	  margin-right:10px;
   }
 }

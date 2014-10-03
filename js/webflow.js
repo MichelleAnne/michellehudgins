@@ -1,3 +1,12 @@
+/*mobile menu java*/
+$(document).ready(function(){
+	$(".nav-button").click(function () {
+	$(".nav-button,.primary-nav").toggleClass("open");
+	});    
+});
+
+
+
 /*!
  * Webflow: Front-end site library
  * Other scripts may access this api using an async handler:
